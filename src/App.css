@@ -1,0 +1,175 @@
+.game{
+    display: flex;
+}
+
+.col-left {
+    width: 70%;
+    border: 2px solid #eeeef0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    align-content: center;
+}
+
+.mode-selector {
+    background: #cfd8dc;
+    color: #7d8f95;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 0px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.username-input {
+    background: #f3f3f3;
+    color: #7d8f95;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 0px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.settings-controll button {
+    cursor: pointer;
+    background: #7b8d93;
+    color: #fafafb;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 0px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.game-settings {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.winner-message {
+    margin: 20px;
+    color: #7d8f95;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.col-right {
+    border: 2px solid #eeeef0;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 50px;
+}
+
+.game-winners-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.winners-list-title {
+    font-size: 30px;
+    color: #888888;
+    font-weight: 500;
+    margin-bottom: 40px;
+    margin-right: auto;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 10px;
+    background: #cfd8dc;
+    margin: 1px;
+    color: #a0a9ad;
+    font-size: 20px;
+}
+
+.list-item-name {
+    margin-right: auto;
+}
+
+.list-item-date {
+    margin-left: auto;
+}
+
+.game-board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    margin: 0 auto 50px;
+    border: 1px solid #dddddd;
+}
+
+.game-board.normalMode {
+    width: 500px;
+}
+
+.game-board.hardMode {
+    width: 750px;
+}
+
+.game-board-item {
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    transition: all linear 0.3s
+}
+
+.passed {
+    background: green;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.failed {
+    background: red;
+}
+
+.active {
+    background: blue;
+}
+
+.game-board-item:hover {
+    border: 2px solid #fffe00;
+}
+
+.game-settings {
+    display: flex;
+    flex-direction: row;
+}
+
+.hide {
+    display: none;
+}
+
+.game-winners-list {
+    text-align: center;
+}
+
+.list-item-name {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-item-date {
+    display: flex;
+}
+
